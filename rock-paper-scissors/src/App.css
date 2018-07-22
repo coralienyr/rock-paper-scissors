@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 60px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+  background-color: #81D4FA;
+  font-family: 'Ruda';
+}
+.App{
+  width: 95%;
+  margin: 0 auto;
+}
+h1{
+  font-family: 'Sriracha';
+  color: #EEE;
+  line-height: 46px;
+}
+a{
+  color: #FF8F00;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+h2, h3{
+  font-family: 'Sriracha';
+  color: #EEE;
+}
+p{
+  color: #424242;
+}
+.elements{
+  margin: 15px 0;
+}
+.flex{
+  display: flex;
+}
+.space-b{
+  justify-content: space-between;
+}
+#compVsComp a, #youVsComp a, #startGame{
+  font-family: 'Sriracha';
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #FF8F00;
+  text-align: center;
+  color: #EEEEEE;
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 2%;
+}
+
+.rock, .buttonRock{
+  background-image: url('./img/rock.png');
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+}
+.paper, .buttonPaper{
+  background-image: url('./img/paper.png');
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+}
+.scissors, .buttonScissors{
+  background-image: url('./img/scissors.png');
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+}
+.buttonPaper, .buttonRock, .buttonScissors{
+  background-color: transparent;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+#computer1, #computer2, #you, #computer{
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  padding: 2%;
+}
+#result{
+  color: #eee;
+  font-family: 'Sriracha';
+  font-size: 20px;
+  margin-top: 20px;
+}
+#computer1.looser, #computer2.looser, #you.looser, #computer.looser{
+  background: #C62828;
+}
+#computer1.winner, #computer2.winner, #you.winner, #computer.winner{
+  background: #2E7D32;
+}
+.score:first-of-type{
+  border-bottom: 2px solid #424242;
+}
+.score .name{
+  width: 120px;
+}
+.score p{
+  text-align: left;
+  margin: 8px 0;
+}
+
+@media screen and (min-width:960px){
+  .App{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .App{
+    width: 960px;
+  }
+}
+
+@media screen and (min-width:1340px){
+  .App{
+    width: 1024px;
+  }
+}
